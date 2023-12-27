@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Сучасні комп'ютери та їх використання</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" type="image/x-icon" href="pc.ico">
+    <link rel="stylesheet" href="sc.js">
+</head>
+
+<body>
+    <div class="button-container">
+        <button onclick="changeToWhite()">Світла тема</button>
+        <button onclick="changeColor()">Темна тема</button>
+    </div>
+
+    <!--Зміна теми сторінки-->
+    <script>
+        function changeToWhite() {
+            document.body.style.backgroundColor = '#e6e6e6';
+            document.body.style.color = 'black'; // Текст на білому фоні буде чорним для кращої видимості
+
+        }
+
+        function changeColor() {
+            document.body.style.backgroundColor = '#333333';
+            document.body.style.color = 'white'; // Текст на фоні чорного кольору буде білим для кращої видимості
+        }
+    </script>
+    <!--Часи-->
+    <script>
+        digitalClock();
+    </script>
+    <script>
+        setInterval(function () {
+            var now = new Date();
+            var clock = document.getElementById("clock");
+            clock.innerHTML = now.toLocaleTimeString();
+        }, 1000);
+    </script>
+    <span id="clock" style="background-color: #616161; color: #ffffff; border:4px outset #03c9bf; padding:5px 20px;">
+    </span>
+    <h1>Сучасні комп'ютери та їх використання</h1>
+     <!--Навігація-->
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="1.html">Інформація</a></li>
+            <li><a href="2.html">Посилання</a></li>
+        </ul>
+    </nav>
+    <!--Основний текст-->
+    <h2>Посилання:</h2>
+    
+    <p>1.<a href="https://tech.liga.net">https://tech.liga.net</a></p>
+    <p>2.<a href="https://www.aboutamazon.com">https://www.aboutamazon.com</a></p>
+    <p>3.<a href="https://www.digitaltrends.com">https://www.digitaltrends.com</a></p>
+    <p>4.<a href="https://www.digitaltrends.com">https://www.digitaltrends.com</a></p>
+    <img src="pc3.gif" class="img">
+    <p>5.<a href="https://excel-vba.ru">https://excel-vba.ru</a></p>
+    <p>6.<a href="https://www.gartner.com/">https://www.gartner.com/</a></p>
+    <p>7.<a href="https://ukr.segodnya.ua/">https://ukr.segodnya.ua/</a></p>
+    <p>8.<a href="https://www.idc.com/">https://www.idc.com/</a></p>
+    <p>9.<a href="https://mind.ua/">https://mind.ua/</a></p>
+    <p>10.<a href="https://ti-ukraine.org/">https://ti-ukraine.org/</a></p>
+    <p>11.<a href="https://ain.ua">https://ain.ua</a></p>
+    <p>12.<a href="https://nus.org.ua/">https://nus.org.ua/</a></p>
+    <p>13.<a href="https://education-ua.org/">https://education-ua.org/</a></p>
+    <p>14.<a href="https://www.idc.com/">https://www.idc.com/</a></p>
+    <p>15.<a href="https://dou.ua/">https://dou.ua/</a></p>
+    <footer>Гаджалов Ярослав 2КН-23Б</footer>
+    
+</body>
+
+</html>
